@@ -9,3 +9,5 @@
 form elements
 .
 `</form>`
+
+- Forms are sent to the backend where the information from the user is being stored. 
