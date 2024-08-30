@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+
+.nature {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.motivation-img {
+    width: 100%;
+    border: 2px solid white;
+    box-shadow: 4px 4px 5px #888888;
+    transition: all 1s;
+}
+
+.nature > h1 {
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+
+.motivation-img:hover {
+    transform: scale(1.1);
+}
