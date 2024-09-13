@@ -16,3 +16,14 @@ var capitalizedName = upperCaseFirstChar + lowerCaseChar;
 
 alert("Hello " + capitalizedName + ", welcome to my page!")
 
+//method 2:
+
+// var yourName = prompt("What is your name?");
+
+// var upperChar = (yourName.slice(0,1)).toUpperCase();
+
+// var rest0fName = (yourName.slice(1, yourName.length)).toLowerCase();
+
+// var correctName = upperChar + rest0fName;
+
+// alert("Hello " + correctName + ", welcome to my page!");
