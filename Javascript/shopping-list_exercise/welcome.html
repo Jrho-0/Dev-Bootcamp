@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission with JavaScript</title>
+    <style>
+        #myForm {
+            text-align: center;
+            margin-top: 10%;
+            
+        }
+
+        #username {
+            border-radius: 4px;
+            padding: 8px 50px;
+    
+        }
+        
+        button {
+            border-radius: 5px;
+            padding: 5px 15px;
+            background-color: rgb(47, 11, 74);
+            border-style: none;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        ::placeholder {
+            text-align: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form id="myForm">
+        <input type="text" id="username" placeholder="What is your name?" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+
+        var form = document.getElementById("myForm");
+
+        form.addEventListener("submit", function(event) {
+
+            var yourName = document.getElementById("username").value;
+        
+            var upperChar = yourName.slice(0,1).toUpperCase();
+            
+            var rest0fName = yourName.slice(1, yourName.length).toLowerCase()
+            
+            var correctName = upperChar + rest0fName;
+            event.preventDefault(); // Prevent the default form submission
+
+    
+            // Redirect to the new file and pass the username as a query parameter
+            window.location.href = "index.html?username=" + encodeURIComponent(correctName);
+        });
+    </script>
+
+</body>
+</html>
