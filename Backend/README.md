@@ -11,7 +11,7 @@ Backend development involves the logic, database, and other operations that are 
 + npm (npm init)
 + Middlewares
 
-### REFERENCE
+### Reference
 
 image from [GeeksforGeeks](https://www.geeksforgeeks.org/backend-development/)
 
