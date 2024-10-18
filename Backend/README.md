@@ -10,7 +10,7 @@ Backend development involves the logic, database, and other operations that are 
 + express.js
 + npm (npm init)
 + Middlewares
-+ ejs(embedded Javascript) templating language
++ ejs (embedded Javascript) templating language
 
 ### Reference
 
